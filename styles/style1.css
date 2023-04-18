@@ -1,0 +1,274 @@
+:root{
+    --main-color: #2196F3;
+    --text-color: black;
+    --ph-color: #757575;
+    --bg-color: #2F303A;
+    --text-color-2: white;
+    --title-color: #212121;
+    --but-color: #F5F4FA;
+    --svg-color: #555555;
+}
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.logo {
+    text-decoration: none;
+    margin: 10px 20px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.logo span {
+    color: var(--main-color);
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 50px;
+}
+
+.menu li {
+    display: inline-block;
+    margin: 10px 20px;
+    font-weight: bold;
+}
+
+.menu a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+header {
+    border: 1px solid #ECECEC;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+.st{
+    color: var(--main-color);
+}
+header a:hover {
+    color: var(--main-color);
+    fill: var(--main-color);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--ph-color);
+}
+
+.info svg {
+    width: 20px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+.address li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.button {
+    display: flex;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.button li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.but {
+    padding: 5px 25px;
+    border: 0;
+    background: var(--but-color);
+    border-radius: 5px;
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    transition: all .5s ease;
+}
+
+.but:hover {
+    background-color: var(--main-color);
+    color: var(--text-color-2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.img {
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    grid-gap: 50px;
+    padding: 0;
+    margin: auto;
+    width: 1180px;
+}
+
+.img h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--title-color);
+}
+
+.img p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+    color: var(--ph-color);
+}
+.img a{
+    text-decoration: none;
+}
+.img li {
+    width: 360px;
+    height: 420px;
+    list-style-type: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: all .5s ease;
+}
+
+.img li:hover {
+    transform: scale(1.1);
+}
+
+.img h3,p {
+    margin-left: 20px;
+}
+
+footer {
+    background-color: var(--bg-color);
+    margin-top: 100px;
+}
+
+.foot {
+    height: 252px;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    margin-left: 200px;
+}
+
+.address1 a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--text-color-2);
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+.address1 a:hover{
+    color: var(--main-color);
+    opacity: 1;
+}
+.address1 li {
+    margin: 10px 0;
+}
+
+.address1 .a {
+    opacity: 1;
+}
+
+.logo1 {
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--text-color-2);
+}
+
+.logo1 span {
+    color: var(--main-color);
+}
+
+.foot ul {
+    padding: 0;
+    width: 240px;
+    height: 81px;
+    margin-top: 20px;
+}
+
+.foot li {
+    list-style-type: none;
+}
+
+.foot h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--text-color-2);
+}
+
+.div ul {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.div li {
+    display: flex;
+}
+
+.div a {
+    width: 44px;
+    height: 44px;
+    fill: var(--svg-color);
+    transition: all .3s ease;
+}
+
+.div a:hover {
+    fill: var(--main-color);
+}
+
+.div svg {
+    width: 44px;
+    height: 44px;
+}

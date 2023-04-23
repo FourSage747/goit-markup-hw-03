@@ -23,7 +23,6 @@ body {
 
 .logo {
     text-decoration: none;
-    margin: 10px 20px;
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -37,21 +36,25 @@ body {
 
 .menu {
     list-style-type: none;
+    padding: 0;
     margin: 0;
-    padding-left: 50px;
+    margin-left: 93px;
+    display: flex;
+    gap: 50px;
 }
 
-.menu li {
+/* .menu li {
     display: inline-block;
     margin: 10px 20px;
     font-weight: bold;
-}
+} */
 
 .menu a {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    padding: 32px 0;
 }
 
 header {
@@ -96,11 +99,16 @@ nav {
     height: 16px;
     margin-right: 10px;
 }
-
-.address li {
+.address{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 40px;
+}
+/* .address li {
     display: inline-block;
     margin: 0 20px;
-}
+} */
 
 .button {
     display: flex;

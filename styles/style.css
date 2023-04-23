@@ -25,7 +25,6 @@ body {
 
 .logo {
     text-decoration: none;
-    margin: 10px 20px;
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -39,20 +38,27 @@ body {
 
 .menu {
     list-style-type: none;
+    padding: 0;
     margin: 0;
-    padding-left: 50px;
+    margin-left: 93px;
+    display: flex;
+    gap: 50px;
 }
 
-.menu li {
-    display: inline-block;
-    margin: 10px 20px;
-}
+/* .menu li {
+    display: flex;
+    gap: 10px;
+} */
 
 .menu a {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    padding: 32px 0;
+}
+header{
+    border-bottom: solid 1px black;
 }
 
 header .container {
@@ -93,35 +99,32 @@ nav {
     height: 16px;
     margin-right: 10px;
 }
+.address{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 40px;
+}
 
-.address li {
+/* .address li {
     display: inline-block;
     margin: 0 20px;
-}
+} */
 
 .main {
     background-color: var(--bg-color);
+    padding: 200px 0;
 }
 
-.main .container {
-    height: 600px;
-    width: 100%;
-    color: var(--text-color-2);
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+
 
 .button {
-    width: 216px;
-    height: 50px;
+    padding: 10px 24px;
     background-color: var(--main-color);
     border: 0;
     border-radius: 7px;
     color: var(--text-color-2);
-    margin-top: 20px;
+    margin-top: 30px;
     transition: all .5s ease;
     font-weight: 700;
     font-size: 16px;
@@ -142,7 +145,6 @@ nav {
     margin: -1px;
     border: 0;
     padding: 0;
-
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
@@ -156,19 +158,18 @@ nav {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    margin: 0;
+    margin: 0 auto;
     width: 696px;
-    height: 120px;
+    color: var(--text-color-2);
 }
 
 .main div {
     text-align: center;
-    position: relative;
-    z-index: 1;
 }
 
 .text .title {
-
+    margin: 0;
+    margin-bottom: 15px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -178,6 +179,7 @@ nav {
 }
 
 .text p {
+    margin: 0;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
@@ -186,25 +188,26 @@ nav {
 }
 
 .text {
-    display: flex;
-    justify-content: space-around;
+    /* display: flex;
+    justify-content: space-around; */
+    padding: 94px 0;
 }
 
 .text ul {
     padding: 0;
     display: flex;
+    margin: 0;
+    gap: 30px;
 }
 
 .text li {
     list-style-type: none;
-    display: inline-block;
-    margin: 50px 20px;
     width: 270px;
-    height: 224px;
 }
 
 .imeges {
-    margin: 50px auto;
+    margin: 0 auto;
+    padding-bottom: 94px;
 }
 
 .imeges ul {
@@ -212,6 +215,13 @@ nav {
     /* justify-content: space-around; */
     padding: 0;
     gap: 30px;
+    margin: 0;
+}
+.imeges img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: 100%;
 }
 
 .imeges li {
@@ -225,7 +235,8 @@ nav {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-color);
-    margin: 50px 0;
+    margin: 0;
+    margin-bottom: 50px;
 }
 
 .ourteam {

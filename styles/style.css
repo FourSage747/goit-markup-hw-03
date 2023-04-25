@@ -51,6 +51,7 @@ body {
 } */
 
 .menu a {
+    display: block;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -58,7 +59,7 @@ body {
     padding: 32px 0;
 }
 header{
-    border-bottom: solid 1px black;
+    border-bottom: solid 1px #ECECEC;
 }
 
 header .container {
@@ -104,6 +105,8 @@ nav {
     padding: 0;
     display: flex;
     gap: 40px;
+    margin: 0;
+    align-items: center;
 }
 
 /* .address li {
@@ -241,21 +244,25 @@ nav {
 
 .ourteam {
     background-color: var(--bg2-color);
-    height: 732px;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 94px 0;
 }
 
 .ourteam h2 {
     text-align: center;
-    font-size: 37px;
+    font-size: 36px;
+    margin: 0;
+    margin-bottom: 50px;
 }
 
 .team {
     display: flex;
     text-align: center;
     padding: 0;
+    margin: 0;
+    gap: 30px;
 }
 
 .team ul {
@@ -265,13 +272,20 @@ nav {
     gap: 10px;
     justify-content: center;
 }
-
+.team img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
 .photo h3 {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
+    margin: 0;
+    margin-bottom: 10px;
 }
 
 .photo p {
@@ -281,6 +295,7 @@ nav {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--ph-color);
+    margin: 0;
 }
 
 .photo li {
@@ -307,19 +322,18 @@ nav {
 
 .team li {
     list-style-type: none;
-}
-
-.photo {
     width: 270px;
-    height: 368px;
     background-color: var(--text-color-2);
-    margin: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     cursor: pointer;
     transition: all .5s ease;
 }
 
-.photo:hover {
+.photo{
+    padding: 30px 0;
+}
+
+.team li:hover {
     transform: scale(1.1);
 }
 
@@ -387,17 +401,19 @@ nav {
 
 footer {
     background-color: var(--bg-color);
+    padding: 60px 0;
 }
 
-.foot {
+/* .foot {
     height: 312px;
     display: flex;
     align-items: center;
     gap: 70px;
     margin-left: 200px;
-}
-.address1 li{
-    margin: 10px 0;
+} */
+.address1{
+    margin: 0;
+    margin-top: 28px;
 }
 .address1 a {
     text-decoration: none;
@@ -417,7 +433,12 @@ footer {
 .address1 .a {
     opacity: 1;
 }
-
+.address1 li:first-of-type{
+    margin-bottom: 12px;
+}
+.address1 li:nth-of-type(2){
+    margin-bottom: 12px;
+}
 .logo1 {
     text-decoration: none;
     font-family: 'Raleway';
@@ -433,9 +454,7 @@ footer {
 
 .foot ul {
     padding: 0;
-    width: 240px;
-    height: 81px;
-    margin-top: 20px;
+    margin: 0;
 }
 
 .foot li {
